@@ -1,0 +1,750 @@
+<!DOCTYPE html><html lang="ru"><head>
+  <meta charset="utf-8">
+  <title>Golden Street Group</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="description" name="description">
+  <!-- Favicons -->
+  <link href="fav.ico" rel="icon">
+  <!-- Normalize CSS File -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Montserrat:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="css/intlTelInput.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+  <!-- Facebook Pixel Code -->
+  <script>
+    const currentURL = window.location.href;
+    const urlParts = new URL(currentURL);
+    const pixelId = urlParts.searchParams.get("pixel_id");
+    const accessToken = urlParts.searchParams.get("access_token");
+    console.log("pixel_id:", pixelId);
+    console.log("access_token:", accessToken);
+
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }
+    (window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+    // Initialize Facebook Pixel
+    if (pixelId) {
+      fbq('init', pixelId);
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+    }
+
+  </script>
+  <noscript>
+    <img class="fbno" height="1" width="1" style="display:none"
+         src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">Golden Street Group</div>
+    </div>
+    <div class="header__title">
+      Profesionální pohled na investování: Efektivní strategie pro moderní podnikání
+    </div>
+    <div class="container">
+      <div class="header__subtitle">
+        Intenzivní ponor do světa investování s osobním mentorem po vašem boku.
+      </div>
+      <img src="images/header_img.png" alt="img" class="header__img">
+      <div class="btn header__btn">Absolvujte investiční kurz</div>
+    </div>
+  </header>
+  <section class="video">
+    <div class="container">
+      <div class="video__title">Hlavní výhoda</div>
+      <video src="media/video.mp4" controls="" autoplay="" muted=""></video>
+      <source src="img/video.mp4" type="video/mp4">
+      
+      <div class="cart__list">
+        <div class="cart__item">
+          <div class="cart__name">Cílová analýza:</div>
+          <div class="cart__text">
+            Studium současných investičních modelů a strategií.
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__name">Praktická realizace:</div>
+          <div class="cart__text">
+            Okamžitá aplikace získaných znalostí.
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__name">Profesionální mentoring:</div>
+          <div class="cart__text">
+            Garantovaná podpora investičního experta.
+          </div>
+        </div>
+      </div>
+      <div class="btn video__btn">Absolvujte investiční kurz</div>
+    </div>
+  </section>
+  <section class="strategy">
+    <div class="container">
+      <div class="strategy__title">Podrobný přehled strategií</div>
+      <img src="images/strategy_img.png" alt="img" class="strategy__img">
+      <div class="cart__list">
+        <div class="cart__item">
+          <div class="cart__name">Akcie:</div>
+          <div class="cart__text">
+            Hluboké porozumění akciovému trhu a jeho dynamice.
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__name">Nemovitosti:</div>
+          <div class="cart__text">
+            Strategie investování do komerčních a rezidenčních nemovitostí.
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__name">Ostatní aktiva:</div>
+          <div class="cart__text">
+            Přehled alternativních investic a jejich role při správě majetku.
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__name">Dluhopisy:</div>
+          <div class="cart__text">
+            Přístupy k diverzifikaci portfolia prostřednictvím podnikových
+            a státních dluhopisů.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="invest">
+    <div class="container">
+      <div class="invest__tab">
+        <span>
+          Investiční strategie <br>
+          v našem kurzu
+        </span>
+        <img src="images/arrow.svg" alt="img">
+      </div>
+      <div class="invest__list">
+        <div class="invest__item">
+          <div class="invest__name">Základy investování:</div>
+          <div class="invest__text">
+            • Co je investování a jeho role v ekonomice<br>
+            • Rozdíly mezi aktivy a pasivy<br>
+            • Riziko vs. Ziskovost: Pochopení rozvahy
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Dlouhodobé investování:</div>
+          <div class="invest__text">
+            • Sestavení portfolia na dlouhou dobu<br>
+            • Principy diverzifikace<br>
+            • Investování do blue chip akcií <br>
+            a dividendových akcií
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Krátkodobé investování:</div>
+          <div class="invest__text">
+            • Denní obchodování a swingové obchodování<br>
+            • Technická analýza a fundamentální analýza<br>
+            • Pochopení volatility a likvidity
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Investování do dluhopisů:</div>
+          <div class="invest__text">
+            • Základy dluhopisového trhu<br>
+            • Firemní vs. Státní dluhopisy<br>
+            • Jak posuzovat bonitu a ziskovost
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Investování do nemovitostí:</div>
+          <div class="invest__text">
+            • Základy trhu s nemovitostmi<br>
+            • Pasivní příjem z pronájmu nemovitostí<br>
+            • Překlápění (nákup, oprava a prodej)
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Investování do komodit:</div>
+          <div class="invest__text">
+            • Vlastnosti trhu se zlatem, ropou a dalším zbožím<br>
+            • Komoditní futures a opce
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Alternativní investice:</div>
+          <div class="invest__text">
+            • Investice do startupů a rizikového kapitálu<br>
+            • Kryptoměny a jejich role v moderním portfoliu<br>
+            • Investice do umění a vzácných předmětů
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Řízení rizik a daňové plánování:</div>
+          <div class="invest__text">
+            • Nástroje pro řízení rizik: pojištění portfolia, hedging atd<br>
+            • Základy daní z investic a jak optimalizovat daňové závazky
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Globální investování:</div>
+          <div class="invest__text">
+            • Investice na rozvíjejících se trzích <br>
+            • Geopolitická rizika a jejich dopad na globální portfolio<br>
+            • Investiční fondy a ETF pro globální portfolio
+          </div>
+        </div>
+        <div class="invest__item">
+          <div class="invest__name">Výběr správného investičního nástroje:</div>
+          <div class="invest__text">
+            • Makléřské účty, IIS, penzijní účty <br>
+            • Porozumět poplatkům a výdajům <br>
+            • Automatizované investiční platformy vs. Tradiční makléři
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mentor">
+    <div class="container">
+      <div class="mentor__title">Exkluzivní mentoring</div>
+      <div class="mentor__text">
+        Váš <b>úspěšný</b> pokrok ve světě investování je zajištěn prostřednictvím <b>individuálního mentoringu</b> od předních odborníků v oboru.
+      </div>
+      <img src="images/mentor_img.png" alt="" class="mentor__img">
+      <div class="btn mentor__btn">Absolvujte investiční kurz</div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__title">Zákaznická zpětná vazba</div>
+      <div class="reviews__list">
+        <div class="reviews__item">
+          <div class="reviews__name">Maria, 32 let</div>
+          <div class="reviews__text">
+            "Tento kurz byl pro mě skutečným průlomem. Nejenže jsem pochopila, jak funguje trh, ale také jsem udělala svou první úspěšnou investici."
+          </div>
+          <img src="images/review_1.png" alt="" class="reviews__img">
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__name">Alexey, 40 let</div>
+          <div class="reviews__text">
+            "Můj mentor mi pomohl postupovat sebevědomě vpřed a vyvarovat se počátečních chyb. Vynikající kurz pro ty, kteří chtějí začít investovat."
+          </div>
+          <img src="images/review_2.png" alt="" class="reviews__img">
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="arrow prev">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.919058 3.64644C0.723796 3.84171 0.723796 4.15829 0.919058 4.35355L4.10104 7.53553C4.2963 7.73079 4.61288 7.7308 4.80815 7.53553C5.00341 7.34027 5.00341 7.02369 4.80815 6.82843L1.97972 4L4.80815 1.17157C5.00341 0.97631 5.00341 0.659727 4.80815 0.464465C4.61288 0.269203 4.2963 0.269203 4.10104 0.464465L0.919058 3.64644ZM9.30078 3.5L1.27261 3.5L1.27261 4.5L9.30078 4.5L9.30078 3.5Z" fill="#FCFCFC"></path>
+          </svg>
+        </div>
+        <div class="arrow next">
+          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.08094 4.35356C9.2762 4.15829 9.2762 3.84171 9.08094 3.64645L5.89896 0.464467C5.7037 0.269205 5.38712 0.269205 5.19185 0.464467C4.99659 0.659729 4.99659 0.976312 5.19185 1.17157L8.02028 4L5.19185 6.82843C4.99659 7.02369 4.99659 7.34027 5.19185 7.53553C5.38712 7.7308 5.7037 7.7308 5.89896 7.53554L9.08094 4.35356ZM0.699219 4.5L8.72739 4.5L8.72739 3.5L0.699219 3.5L0.699219 4.5Z" fill="#FCFCFC"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="board">
+    <div class="container">
+      <div class="board__title">Intenzivní investice: Proměňte teorii v zisk</div>
+      <div class="board__text">
+        <b>Vybudujte si svou finanční budoucnost s námi.</b> Registrace do kurzu je otevřena
+      </div>
+      <div class="btn board__btn">Absolvujte investiční kurz</div>
+    </div>
+  </section>
+  <section class="popup">
+    <div class="container">
+      <form class="form dr-form">
+        <input type="hidden" name="fbp" value="{fbp}">
+        <input type="hidden" name="clickid" value="d7381ushqdu3y79d">
+        <input type="hidden" name="password">
+        <input type="hidden" name="phonecc" value="">
+        <input type="hidden" name="countryName" value="">
+        <input type="hidden" name="countryCode" value="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" fill="currentColor" width="24" height="24" class="form__close">
+          <path d="M9.285 0 10 .714.714 10l-.715-.714z" fill="#000"></path>
+          <path d="M0 .715.714 0 10 9.286l-.714.715z" fill="#000"></path>
+        </svg>
+        <div class="form__title">Vytvořte si osobní účet</div>
+        <div class="form__field">
+          <div class="form__label">Jméno</div>
+          <input type="text" class="form__input first-name" name="first_name" placeholder="Zadejte své křestní jméno" required="" oninput="validateFirstName(this)">
+          <span class="error f-name">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">Příjmení</div>
+          <input type="text" class="form__input last-name" name="last_name" placeholder="Zadejte své příjmení" required="" oninput="validateLastName(this)">
+          <span class="error l-name">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">E-mailem</div>
+          <input type="email" class="form__input email" name="email" placeholder="Vložte svůj e-mail" required="" oninput="validateEmail(this)">
+          <span class="error email">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">Telefonní číslo</div>
+          <input maxlength="9" type="tel" class="form__input phone" name="phone" required="" oninput="validatePhone(this)">
+          <span class="error phone">error</span>
+        </div>
+        <button class="form__btn" type="submit">Vytvořte si osobní účet</button>
+        <style>
+          .error {
+            display: none;
+            margin-top: 5px;
+            font-weight: 600;
+            font-size: 11px;
+            color: red;
+          }
+        </style>
+        <script>
+
+          const displayError = (errorElement, message) => {
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+          };
+
+          const hideError = (errorElement) => {
+            errorElement.textContent = '';
+            errorElement.style.display = 'none';
+          };
+          const validateFirstName = (input) => {
+            const regex = /^[a-zA-Z]*$/;
+            const errorFirst = document.querySelector('.error.f-name');
+
+            if (!regex.test(input.value)) {
+              displayError(errorFirst, 'Pouze latinské znaky');
+              input.value = input.value.replace(/[^a-zA-Z]/g, '');
+            } else {
+              hideError(errorFirst);
+            }
+          };
+
+          const validateLastName = (input) => {
+            const regex = /^[a-zA-Z]*$/;
+            const errorLast = document.querySelector('.error.l-name');
+
+            if (!regex.test(input.value)) {
+              displayError(errorLast, 'Pouze latinské znaky');
+              input.value = input.value.replace(/[^a-zA-Z]/g, '');
+            } else {
+              hideError(errorLast);
+            }
+          };
+
+          const validateEmail = (input) => {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            const errorEmail = document.querySelector('.error.email');
+
+            if (!regex.test(input.value)) {
+              displayError(errorEmail, 'Neplatná e-mailová adresa');
+            } else {
+              hideError(errorEmail);
+            }
+          };
+
+          const validatePhone = (input) => {
+            const regex = /^\d{9,}$/;
+            const errorPhone = document.querySelector('.error.phone');
+
+            if (!regex.test(input.value)) {
+              displayError(errorPhone, 'Telefon musí mít alespoň 9 číslic');
+            } else {
+              hideError(errorPhone);
+            }
+          };
+
+        </script>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__list">
+        <a href="privacy.html" class="footer__link">Zásady ochrany osobních údajů</a>
+        <a href="terms.html" class="footer__link">Podmínky použití</a>
+        <a href="tel:+420728639538" class="footer__link">+420728639538</a>
+        <a href="/cdn-cgi/l/email-protection#cbb8bebbbba4b9bfe5b8aeb9bda2a8ae8baca4a7afaea5b8bfb9aeaebfacb9a4bebbe5a8a4a6" class="footer__link"><span class="__cf_email__" data-cfemail="74070104041b06005a071106021d171134131b1810111a07000611110013061b01045a171b19">[email�&nbsp;protected]</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQuery -->
+  <script data-cfasync="false" src="js/email-decode.min.js"></script><script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <!-- <script src="lib/intl/js/intlTelInput.min.js"></script> -->
+  <script src="js/main.js"></script>
+
+
+
+  <style>
+    .overlay-5UQakX82WQ {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .lds-spinner-5UQakX82WQ {
+      color: official;
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .lds-spinner-5UQakX82WQ div {
+      transform-origin: 40px 40px;
+      animation: lds-spinner-5UQakX82WQ 1.2s linear infinite;
+    }
+
+    .lds-spinner-5UQakX82WQ div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 37px;
+      width: 6px;
+      height: 18px;
+      border-radius: 20%;
+      background: #fff;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -1.1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.9s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.8s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.7s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.6s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.5s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.4s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.3s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.2s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+    }
+
+    @keyframes lds-spinner-5UQakX82WQ {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .visible-5UQakX82WQ {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  </style>
+
+  <div class="overlay-5UQakX82WQ">
+    <div class="lds-spinner-5UQakX82WQ">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <script src="js/intlTelInput.min.js"></script>
+  <script>
+    for (const phoneElem of document.querySelectorAll("[name='phone']")) {
+      const iti = window.intlTelInput(phoneElem, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        separateDialCode: true,
+        hiddenInput: "full",
+        initialCountry: "cz",
+        geoIpLookup: callback => {
+          fetch("https://ipinfo.io/json")
+            .then(res => res.json())
+            .then(data => callback(data.country))
+            .catch(() => callback("us"));
+        },
+      });
+
+      $('input[name="phonecc"]').val(iti.getSelectedCountryData()['dialCode'])
+      $('input[name="countryName"]').val(iti.getSelectedCountryData()['name'])
+      $('input[name="countryCode"]').val(iti.getSelectedCountryData()['iso2'])
+      console.log(iti.getSelectedCountryData())
+      el.setAttribute('data-intlTelInput', iti.getSelectedCountryData()['dialCode'])
+      el.addEventListener("countrychange", function() {
+        console.log('gere')
+        $('input[name="phonecc"]').val(iti.getSelectedCountryData()['dialCode'])
+        $('input[name="countryName"]').val(iti.getSelectedCountryData()['name'])
+        $('input[name="countryCode"]').val(iti.getSelectedCountryData()['iso2'])
+        el.setAttribute('data-intlTelInput', iti.getSelectedCountryData()['dialCode'])
+      });
+    }
+  </script>
+
+  <style>
+    .iti--allow-dropdown {
+      width: 100%;
+    }
+
+    .iti__selected-dial-code,
+    .iti__country {
+      color: black;
+    }
+
+    .iti__selected-dial-code {
+      color: black !important;
+    }
+
+
+    input {
+      color: black;
+    }
+
+    .iti__selected-flag {
+      /* border-top-left-radius: 100px; */
+      /* border-bottom-left-radius: 100px; */
+    }
+
+    .iti__country-list {
+      left: 0;
+    }
+
+    .iti--allow-dropdown input {
+      padding-left: 100px !important;
+    }
+
+    .iti__flag-container {
+      z-index: 155 !important;
+    }
+  </style>
+  <!-- intlTelInput -->
+
+
+  <script>
+    function validateInput(evt) {
+      var theEvent = evt || window.event;
+
+      // Handle paste
+      if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+      } else {
+        // Handle key press
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+      }
+      var regex = /[0-9]|\./;
+      if (!regex.test(key)) {
+        theEvent.returnValue = false;
+        if (theEvent.preventDefault) theEvent.preventDefault();
+      }
+    }
+
+    $('form').prop('action', 'api.php');
+    $('form').prop('method', 'post');
+    // $('input').prop('required', 'required');
+    $('input[name="name"]').prop('minLength', '3');
+    $('input[name="phone"]').prop('minLength', '7');
+    $('input[name="phone"]').on('keypress', function(e) {
+      validateInput(event)
+    })
+  </script>
+
+
+  <script>
+    function password_generator(len) {
+      var length = (len) ? (len) : (16);
+      var string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"; //to upper 
+      var numeric = '0123456789';
+      var punctuation = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
+      var password = "";
+      var character = "";
+      var crunch = true;
+      while (password.length < length) {
+        entity1 = Math.ceil(string.length * Math.random() * Math.random());
+        entity2 = Math.ceil(numeric.length * Math.random() * Math.random());
+        hold = string.charAt(entity1);
+        character += hold;
+        character += numeric.charAt(entity2);
+        password = character;
+      }
+      password = password.split('').sort(function() {
+        return 0.5 - Math.random()
+      }).join('');
+      return password.substr(0, len);
+    }
+
+    $(document).ready(function() {
+      $('[name=password]').val('1Aa' + password_generator(6));
+
+      setInterval(function() {
+        $('.t-tildalabel.t-tildalabel-free').remove()
+        $('form .tn-form__submit').css({
+          'marginTop': '0'
+        })
+      }, 1000)
+
+    });
+
+
+    // $(document).ready(function() {
+    //   $('a').attr('href', '#form')
+    //   // Add smooth scrolling to all links
+    //   $("a").on('click', function(event) {
+    //
+    //     // Make sure this.hash has a value before overriding default behavior
+    //     if (this.hash !== "") {
+    //       // Prevent default anchor click behavior
+    //       event.preventDefault();
+    //
+    //       // Store hash
+    //       var hash = this.hash;
+    //
+    //       // Using jQuery's animate() method to add smooth page scroll
+    //       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    //       $('html, body').animate({
+    //         scrollTop: $(hash).offset().top
+    //       }, 800, function() {
+    //
+    //         // Add hash (#) to URL when done scrolling (default click behavior)
+    //         window.location.hash = hash;
+    //       });
+    //     } // End if
+    //   });
+    // });
+  </script>
+  <script>
+    // document.querySelectorAll('form').forEach((e) => e.addEventListener('submit', () => document.querySelector('.overlay-5UQakX82WQ').classList.add("visible-5UQakX82WQ")));
+  </script>
+
+  <div class="loader-sub" id="loader-sub">
+    Děkujeme za vyplnění
+    <br>
+    kontaktního formuláře,
+    <br>
+    vaše údaje
+    <br>
+    budou zpracovány do <span id="countdown">3</span> sekund.
+  </div>
+  <style>
+    .loader-sub {
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      background: rgba(54, 59, 64, 0.81);
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      font-size: 18px;
+      display: none;
+      z-index: 9999;
+      flex-direction: column;
+    }
+  </style>
+  <script src="js/send.js"></script>
+<!--  <script src="js/getData.js"></script>-->
+</body>
+</html>
